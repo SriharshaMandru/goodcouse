@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: rgb(208, 230, 250);
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    height:65px;
+    line-height:65px;
+}
+nav .wrapper{
+    display: flex;
+    max-width: 1250;
+    padding:0 30px;
+    margin:auto;
+    justify-content: space-between;
+}
+.wrapper .nav-links{
+    display: inline-flex;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    padding:9px 15px;
+    transition: all 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-links li a:hover {
+    font-size: 20px;
+    color:blue
+}
+.container{
+    display: flex;
+}
+.container .logo img {
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+.container .text{
+    font-size: 25px;
+    margin-left: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-links .buy{
+    background-color: rgb(204, 191, 191);
+    margin-right: 30px;
+    border: none;
+    height:40px;
+    border-radius: 10px;
+}
+.nav-links .cart{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+.nav-links .cart span{
+    padding-left: 5px;
+}
+.nav-links .drop-menu{
+    margin-right: 10px;
+    border:1px solid black;
+    width:180px;
+    top:65px;
+    position: absolute;
+    line-height: 45px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-links li:hover .drop-menu{
+    opacity:1;
+    visibility: visible;
+}
+.drop-menu li a{
+    width:100%;
+    display: block;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+    background-color: white;
+}
+.drop-menu li a:hover{
+    color:crimson;
+}
+.header{
+    text-align: center;
+    margin-top: 100px;
+}
+.header .heading{
+    font-size: 65px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header .p1{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+}
+.header .p2{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img1{
+    margin: 60px;
+    width:100%;
+    height:600px;
+    border-radius: 20px;
+}
+.numbers{
+    display: flex;
+}
+.numbers .num1{
+    margin-left:100px;
+}
+.numbers .num1 span {
+    font-size:40px ;
+}
+.numbers .num1  p{
+    font-size:20px;
+    margin-left: -8px;
+    margin-right: 150px;
+}
+.line{
+    width:2px;
+    height:80px;
+    background-color: black;
+}
+.header2{
+    width:45%;
+    margin-top: 50px;
+}
+.header2 .page1 span{
+    font-size: 40px;
+    font-weight: bold;
+     padding-top: 40px;
+}
+.header2 .page1 p{
+    font-size: 25px;
+    padding-top: 40px;
+}
+.header2 .page1 button {
+    width:150px;
+    height:40px;
+    background-color: rgb(247, 184, 68);
+    border:none;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+ .page2{
+    width:700px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 40px;
+    width:50%;
+    float:right;
+    margin-top: -250px;
+}
+.page2 ion-icon{
+    width:60px;
+    height: 60px;
+    margin-left: 50px;
+} 
+.page2 span{
+   font-size: 30px;
+   padding:60px;
+}
+.page2 p{
+    font-size: 20px;
+    padding-left:30px;
+    padding-top: 60px;
+}
+.page3{
+    width:700px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 40px;
+    float:right;
+    width:50%;
+    margin-top:70px;
+    margin-left: 30px;
+}
+.page3 ion-icon{
+    width:60px;
+    height: 60px;
+    margin-left: 50px;
+} 
+.page3 span{
+   font-size: 30px;
+   padding:60px;
+}
+.page3 p{
+    font-size: 20px;
+    padding-left:30px;
+    padding-top: 60px;
+}
+.page4{
+    width:700px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 40px;
+    float:right;
+    width:50%;
+    margin-top:70px;
+    margin-left: 30px;
+}
+.page4 ion-icon{
+    width:60px;
+    height: 60px;
+    margin-left: 50px;
+} 
+.page4 span{
+   font-size: 30px;
+   padding:60px;
+}
+.page4 p{
+    font-size: 20px;
+    padding-left:30px;
+    padding-top: 60px;
+}
+.page5{
+    width:700px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 40px;
+    float:right;
+    width:50%;
+    margin-top:70px;
+    margin-left: 30px;
+}
+.page5 i{
+    width:80px;
+    height:80px;
+    margin-left: 50px;
+} 
+.page5 span{
+   font-size: 30px;
+   padding:60px;
+}
+.page5 p{
+    font-size: 20px;
+    padding-left:30px;
+    padding-top: 60px;
+}
+video{
+    width:100%;
+    height:400px;
+}
+.btn{
+    background-color: burlywood;
+    border-radius: 50%;
+}
