@@ -69,7 +69,8 @@ nav .wrapper{
 }
 .nav-links .drop-menu{
     margin-right: 10px;
-    border:1px solid black;
+    border:2px solid black;
+    border-radius: 20px;
     width:180px;
     top:65px;
     position: absolute;
@@ -82,12 +83,16 @@ nav .wrapper{
     opacity:1;
     visibility: visible;
 }
+.nav-links .drop-menu{
+    background-color: white;
+}
+
 .drop-menu li a{
     width:100%;
     display: block;
     padding: 0 0 0 10px;
     font-size: 16px;
-    background-color: white;
+     
 }
 .drop-menu li a:hover{
     color:crimson;
@@ -134,20 +139,27 @@ nav .wrapper{
     height:80px;
     background-color: black;
 }
-.header2{
-    width:45%;
-    margin-top: 50px;
+.pages {
+    position: relative;
+    height:1600px;
 }
-.header2 .page1 span{
+ .page1{
+    width:45%;
+    margin-top:50px;
+    position:sticky;
+    top:10%;
+}
+
+ .page1 span{
     font-size: 40px;
     font-weight: bold;
      padding-top: 40px;
 }
-.header2 .page1 p{
+.page1 p{
     font-size: 25px;
     padding-top: 40px;
 }
-.header2 .page1 button {
+ .page1 button {
     width:150px;
     height:40px;
     background-color: rgb(247, 184, 68);
@@ -156,14 +168,14 @@ nav .wrapper{
     margin-top: 30px;
     font-size: 18px;
 }
- .page2{
+.page2{
     width:700px;
     height: 300px;
     border: 3px solid black;
     border-radius: 40px;
     width:50%;
     float:right;
-    margin-top: -250px;
+    margin-top: -200px;
 }
 .page2 ion-icon{
     width:60px;
@@ -250,12 +262,263 @@ nav .wrapper{
     font-size: 20px;
     padding-left:30px;
     padding-top: 60px;
-}
+} 
+
+
+
 video{
     width:100%;
     height:400px;
+    margin-top: 50px;
 }
-.btn{
-    background-color: burlywood;
+.pipe{
+    display: flex;
+    flex-direction: column;
+}
+.pagination{
+    background-color:orange;
+    width:20px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 300px;
+} 
+.abc{
+    background-color: black;
+    height:350vh;
+}
+
+.abc span{
+    font-size: 50px;
+    color:white;
+    margin-left:400px;
+}
+.abc h3{
+     color:white;
+     margin-left: 450px;   
+}
+.abc p{
+    color:white;
+    margin-top: 30px;
+}
+.sub-abc {
+    width:500px;
+    height:300px;
+    margin-left: 40%;
+    margin-top:30px;
+}
+.sub-abc span{
+    font-size:30px;
+    text-align: center;
+    margin-left: 0;
+}
+.sub-abc p{
+    font-size: 18px;
+}
+.abc button{
+    margin-left: 600px;
+    width:180px;
+    height:60px;
+    font-size: 20px;
+    border:none;
+    background-color: orange;
+    border-radius: 20px;
+    margin-top: 30px;
+} 
+
+
+
+
+
+.teachers{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 40px;
+}
+.teachers h1{
+    margin-left: 40px;
+}
+.teachers button{
+    width:150px;
+    height: 50px;
+    background-color: aquamarine;
+    border:none;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.boxes{
+    display:flex;
+    gap:25px;
+    margin:40px;
+}
+.boxes .box{
+    width:400px;
+    height:500px;
+    border:2px solid black;
+    border-radius: 10px;
+}
+.box img{
+    width:370px;
+    height:400px;
+    margin: 10px;
+}
+.box p{
+    text-align: center;
+}
+.box h1{
+    text-align: center;
+}
+.today{
+    width:100%;
+    height:500px;
+    display: flex;
+    border-radius: 20px;
+    background-color: orange;
+}
+ .get h1{
+    padding-top: 50px;
+    margin-left: 60px;
+    font-size: 45px;
+}
+.get p{
+    padding-top: 40px;
+    padding-left: 70px;
+    font-size: 20px;
+}
+.get button{
+    border:none;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    width:250px;
+    height:60px;
+    font-size: 18px;
+    margin-top:30px;
+    margin-left: 70px;
+}
+.today div{
+    margin-left: 130px;
+    margin-top: 45px;
+}
+.today div  img{
+    width:300px;
+    height:400px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+
+
+.footers{
+    margin-left: 30px;
+    display: flex;
+    margin-top: 50px;
+    padding-top: 100px;
+
+ 
+}
+
+.footer{
+    height: 700px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+
+}
+.foot1 img{
+    width:60px;
+    height:60px;
     border-radius: 50%;
+    margin-top: -5px;
+    margin-left: 10px;
 }
+.foot2 h1{
+    margin-left: 30px;
+}
+.foot3 p{
+    margin-left: 50px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.foot3 button{
+    background-color:orangered;
+    margin-right: 30px;
+    border: none;
+    width:220px;
+    font-size: 20px;
+    height:60px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.foot3 hr{
+margin-left:30px;
+margin-top: 50px;
+width:450px;
+color: grey;
+}
+.links{
+        color: white; 
+        display: flex;
+        column-gap: 60px;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 25px;
+    }
+    .list{
+        display: flex;
+        margin-left: 700px;
+        column-gap: 40px;
+        margin-top: -360px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .list1 li{
+        list-style: none;
+        font-size: 18px;
+    }
+    .list1 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .list2 li{
+        list-style: none;
+    }
+    .list2 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .list3 li{
+        list-style: none;
+    }
+    .list3 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .list4 li{
+        list-style: none;
+    }
+    .list4 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .lines{
+        height: 2px;
+        width: 1250px;
+        background-color: wheat;
+        margin-top: 200px;
+        margin-left: 30px;
+    
+    }
+    .para{
+        margin-top: 40px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
