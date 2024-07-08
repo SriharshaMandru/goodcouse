@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Licenses</title>
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-              nav {
+    nav {
     background-color: rgb(208, 230, 250);
     position: fixed;
     top:0;
@@ -122,7 +123,7 @@ nav .wrapper{
 }
 .B1{
     border: solid;
-    height: 270px;
+    height: 300px;
     width: 400px;
     border-radius: 10px;
     padding-left: 10px;
@@ -145,6 +146,39 @@ nav .wrapper{
     padding-left: 10px;
     margin-top: 30px;
 }   
+.C{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+}
+.C1 h1{
+    height: 200px;
+    width: 200px;
+    background-color: #000000;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.C2 h1{
+    height: 200px;
+    width: 200px;
+    background-color: #fffcf2;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.C3 h1{
+    height: 200px;
+    width: 200px;
+    background-color: #fffdf8;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.C4 h1{
+    height: 200px;
+    width: 200px;
+    background-color:  #ffc46a;
+    border: 1px solid;
+    border-radius: 10px;
+}
 .B5{
     border: solid;
     border-radius: 20px;
@@ -159,6 +193,81 @@ nav .wrapper{
     padding-left: 10px;
     margin-top: 30px;
 }   
+.B7{
+    border: solid;
+    border-radius: 20px;
+    width: 750px;
+    padding-left: 10px;
+    margin-top: 30px;
+    padding: 40px 10px;
+}   
+.D{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:10px;
+    row-gap: 50px;
+}
+.D1{
+    height: 130px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgb(211, 202, 202);
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.D1 button{
+    font-size: 20px;
+    background-color: #ffc46a;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+.D2{
+    height: 130px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgb(211, 202, 202);
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.D2 button{
+    font-size: 20px;
+    background-color: #ffc46a;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+.D3{
+    height: 130px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgb(211, 202, 202);
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.D3 button{
+    font-size: 20px;
+    background-color: #f7f4f1;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+.D4{
+    height: 130px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgb(211, 202, 202);
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.D4 button{
+    font-size: 20px;
+    background-color:black;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
 .footers{
     margin-left: 30px;
     display: flex;
@@ -271,8 +380,10 @@ color: grey;
         justify-content: space-between;
         padding: 0 30px;
     }
-    
-
+    .btn a{
+    text-decoration: none;
+    color: white;
+}
 
     .popup {
         width: 400px;
@@ -286,8 +397,8 @@ color: grey;
       
       .p {
         display: flex;
-        justify-content: space-between; 
-        align-items: center; 
+        justify-content: space-between;
+        align-items: center;
         padding: 10px;
       }
       
@@ -304,12 +415,11 @@ color: grey;
       .popup .btn {
         width: 30px;
         height: 30px;
-        background-color: white;
+        background-color: rgb(235, 229, 229);
         border: none;
+        margin-left: 250px;
       }
       
-
-
 
     </style>
 </head>
@@ -317,34 +427,37 @@ color: grey;
     <nav>
         <div class="wrapper">
           <div class="container">
-          <div class="logo"><img src="images/logo.jfif.jpg"></div>
+          <div class="logo"><img src="images/logo.jfif"></div>
           <div class="text"><h3>Good Course</h3></div>
           </div>
 
-          <div class="nav-links">
-            <li><a href="home.html" target="_blank">Home</a></li>
-            <li><a href="about.html" target="_blank">About</a></li>
-            <li><a href="#" target="_blank">Other<ion-icon name="arrow-dropdown"></ion-icon></a>
-            <ul class="drop-menu">
-                <li><a href="templatehome.html" target="_blank">Template Home</a></li>
-                <li><a href="teachers.html" target="_blank">Teachers</a></li>
-                <li><a href="courses.html" target="_blank">Courses</a></li>
-                <li><a href="contact.html" target="_blank">Contact Us</a></li>
-                <li><a href="" target="_blank">Blog</a></li>
-            </ul></li>
-            <li><a href="#">Template<ion-icon name="arrow-dropdown"></ion-icon></a>
-            <ul class="drop-menu">
-               <li><a href="" target="_blank">Style guide</a></li>  
-               <li><a href="license.html" target="_blank">Licenses</a></li>
-               <li><a href="" target="_blank">Start here</a></li>
-               <li><a href="changelog.html" target="_blank">Change log</a></li>
-               <li><a href="" target="_blank">legal</a></li>
-            </ul></li>
-            <li><button class="buy" ><a href="buytemplate.html" target="_blank">Buy Template - $79</a></button></li>
-            <li><button class="cart"><a href="#" >Cart<span>0</span></a></button></li>
-          </div>
+        <div class="nav-links">
+          <li><a href="home.html" target="_blank">Home</a></li>
+          <li><a href="about.html" target="_blank">About</a></li>
+          <li><a href="#" target="_blank">Other<ion-icon name="arrow-dropdown"></ion-icon></a>
+          <ul class="drop-menu">
+              <li><a href="templatehome.html" target="_blank">Template Home</a></li>
+              <li><a href="teachers.html" target="_blank">Teachers</a></li>
+              <li><a href="courses.html" target="_blank">Courses</a></li>
+              <li><a href="contact.html" target="_blank">Contact Us</a></li>
+              <li><a href="" target="_blank">Blog</a></li>
+          </ul></li>
+          <li><a href="#">Template<ion-icon name="arrow-dropdown"></ion-icon></a>
+          <ul class="drop-menu">
+             <li><a href="styleguide.html" target="_blank">Style guide</a></li>  
+             <li><a href="license.html" target="_blank">Licenses</a></li>
+             <li><a href="starthere.html" target="_blank">Start here</a></li>
+             <li><a href="changelog.html" target="_blank">Change log</a></li>
+             <li><a href="legal.html" target="_blank">legal</a></li>
+          </ul></li>
+          <li><button class="buy" ><a href="buytemplate.html" target="_blank">Buy Template - $79</a></button></li>
+          <li><button class="cart"><a href="#" target="_blank">Cart<span>0</span></a></button></li>
         </div>
+      </div>
    </nav>
+
+
+
 
    <div class="popup">
     <div class="p">
@@ -353,9 +466,7 @@ color: grey;
     </div>
     <hr style="border:1px solid black">
     <p class="pop-para">No items added </p>
-</div>
-
-
+    </div>
 
 
 
@@ -363,43 +474,81 @@ color: grey;
         
         
       <div class="contain">
-        <h1>Licenses</h1>
-        <p>All graphical assets in this template are licensed for <br>
-             personal and commercial use. If you'd like to use a <br>
-            specific asset, please check the license below.</p>
+        <h1>Style guide</h1>
+        <p>Take advantage of beautiful design and easily <br>
+            create your dream Course Webflow website that<br>
+             will impress your visitors..</p>
             <div class="btn">
-                <p><a href="buytemplate.html" target="_blank"    style="text-decoration: none;color: white;">Buy template $79</a></p>
+                <a href="buytemplate.html" target="_blank"><p>Buy template $79</p></a>
             </div>
       </div>
       <div class="B">
           <div class="B1">
-            <h1>Images</h1>
+            <h1>Typography</h1>
+            <h1>Colors</h1>
             <h1>Icons</h1>
             <h1>Fonts</h1>
-            <h1>Other assets</h1>
+            <h1>Buttons</h1>
           </div>
           <div class="B2">
             <div class="B3">
-                <h1>Images & videos</h1>
-                <p>All images used in Good Course Webflow Template come from Unsplash, Pexels, and <br>
-                    Freepik, and are free for personal and commercial use. Below you can find links to<br>
-                     some of them.
-                    <br><br>
-                    Unsplash Images Gallery
-                    <br><br>
-                    Freepik:<br>
-                    People avatars images from Wayhomestudio<br>
+                <h1>Heading 1<br>Aa Bb Cc</h1>
+                <p>Heading 1 - 80px / 120% (Outfit)</p><hr>
+                <h2>Heading 1<br>
+                    Aa Bb Cc</h2>
+                <p>Heading 2 - 48px / 120% (Outfit)</p><hr>
+                <h3>Heading 3<br>
+                    Aa Bb Cc</h3>
+                <p>Heading 3 - 30px / 120% (Outfit)</p><hr>
+                <h4>Heading 4<br>
+                    Aa Bb Cc</h4>
+                <p>Heading 4 - 18px / 24px (Outfit)</p><hr>
+                <h5>Heading 5<br>
+                    Aa Bb Cc</h5>  
+                <p>Heading 5 - 14px / 20px (Outfit)</p><hr>
+                <h6>Heading 6<br>
+                    Aa Bb Cc</h6>
+                <p>Heading 6 - 12px / 18px (Outfit)</p><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius <br>
+                    enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros<br>
+                     dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus <br>
+                    nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus<br> tristique posuere.<br>
                     <br>
-                    Pexels<br>
-                    Video from Pexels<br>
-                    Pexels Images Gallery</p>
+                    Paragraph Big - 22px / 130% (Outfit)<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in<br>
+                     eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum <br>
+                     nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id<br>
+                      rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.<br>
+                    <br>
+                    Paragraph Regular - 20px / 130% (Outfit)</p>
             </div>
             <div class="B4">
-                <h1>Icons</h1>
-                <p>All icons used in Good Course come from an open source icon library - Iconoir.<br>
-                     Meaning they are are free for personal and commercial use.</p>
+                <h1>Colors</h1>
+                <div class="C">
+                <div class="C1">
+                    <h1></h1>
+                    <p>Black / #000000</p>
+                </div>
+                <div class="C2">
+                    <h1></h1>
+                    <p>Background / #fffcf2</p>
+                </div>
+                <div class="C3">
+                    <h1></h1>
+                    <p>Light / #fffdf8</p>
+                </div>
+                <div class="C4">
+                    <h1></h1>
+                    <p>Accent / #ffc46a</p>
+                </div>
+                </div>
             </div>
             <div class="B5">
+                  <h1>Icons</h1>
+                  <p>All icons used in Good Course come from an open source icon library - Iconoir.<br>
+                     Meaning they are are free for personal and commercial use.</p>
+            </div>
+            <div class="B6">
                 <h1>Fonts</h1>
                 <p>The Good Course template uses Outfit, a closed-source font from the Indian Type<br>
                      Foundry (ITF) that is 100% free for both personal and commercial use, available<br>
@@ -412,10 +561,26 @@ color: grey;
                     ‍Fontshare: https://www.fontshare.com<br>
                     ‍Free Font License: https://www.fontshare.com/licenses/itf-ffl</p>
             </div>
-            <div class="B6">
-                <h1>Other assets</h1>
-                <p>Good Course Template is using one additional font, called Outfit. It can be<br>
-                     downloaded at Fontshare is 100% free for personal and commercial use.</p>
+            <div class="B7">
+                <h1>Buttons</h1>
+             <div class="D">
+                <div class="D1">
+                    <a href="home.html" target="_blank"><button>Button Text</button></a>
+                    <p>CTA Accent</p>
+                </div>
+                <div class="D2">
+                    <a href="contact.html" target="_blank"><button>Button Text</button></a>
+                    <p>CTA Accent Big</p>
+                </div>
+                <div class="D3">
+                    <a href="license.html" target="_blank"><button>Button Text</button></a>
+                    <p>CTA Outline</p>
+                </div>
+                <div class="D4">
+                    <a href="styleguide.html" target="_blank"><button>Button Text</button></a>
+                    <p>CTA Dark</p>
+                </div>
+             </div>
             </div>
           </div>
 
@@ -434,7 +599,7 @@ color: grey;
             <p>Good Course offers professionals tech <br> 
                 courses from the leading teachers in
                  <br> their industries.</p>
-                 <a href="buytemplate.html" target="_blank"><button> Buy Templates - $79</button></a>
+            <a href="buytemplate.html" target="_blank"><button> Buy Templates - $79</button></a>
             <hr>
         </div>
     
@@ -461,14 +626,14 @@ color: grey;
             <ul>
                 <li>Main Pages</li>
                 <br>
-                <li><a href="#"> Home (Sales)</a></li>
+                <li><a href="home.html"> Home (Sales)</a></li>
                 <br>
-                <li><a href="#"> Home page</a></li>
+                <li><a href="home.html"> Home page</a></li>
                 <br>
-                <li><a href="#"> About</a></li>
+                <li><a href="about.html"> About</a></li>
                 <br>
-                <li><a href="#">Courses</a></li> <br>
-                <li><a href="#"> Teachers</a></li>
+                <li><a href="courses.html">Courses</a></li> <br>
+                <li><a href="teachers.html"> Teachers</a></li>
                 
             </ul>
         </div>
@@ -476,13 +641,13 @@ color: grey;
             <ul>
                 <li>CMS pages</li>
                 <br>
-                <li><a href="#"> Course page</a></li>
+                <li><a href="courses.html"> Course page</a></li>
                 <br>
-                <li><a href="#"> Course category</a></li>
+                <li><a href="changelog.html"> Course category</a></li>
                 <br>
-                <li><a href="#"> Blog past</a></li>
+                <li><a href="blog.html"> Blog past</a></li>
                 <br>
-                <li><a href="#">Teacher profile</a></li> <br>
+                <li><a href="teachers.html">Teacher profile</a></li> <br>
                 
                 
             </ul>
@@ -491,13 +656,13 @@ color: grey;
             <ul>
                 <li>Other pages</li>
                 <br>
-                <li><a href="#"> Blog</a></li>
+                <li><a href="blog.html"> Blog</a></li>
                 <br>
-                <li><a href="#"> Legal</a></li>
+                <li><a href="legal.html"> Legal</a></li>
                 <br>
-                <li><a href="#"> Contact</a></li>
+                <li><a href="contact.html"> Contact</a></li>
                 <br>
-                <li><a href="#">See all pages</a></li> <br>
+                <li><a href="home.html">See all pages</a></li> <br>
                 
             </ul>
         </div>
@@ -505,13 +670,13 @@ color: grey;
             <ul>
                 <li>Templates</li>
                 <br>
-                <li><a href="#"> Style guide</a></li>
+                <li><a href="styleguide.html"> Style guide</a></li>
                 <br>
-                <li><a href="#"> Licences</a></li>
+                <li><a href="license.html"> Licences</a></li>
                 <br>
-                <li><a href="#"> Changelog</a></li>
+                <li><a href="changelog.html"> Changelog</a></li>
                 <br>
-                <li><a href="#">Start here</a></li> 
+                <li><a href="starthere.html">Start here</a></li> 
             </ul>
         </div>
     </div>
@@ -528,18 +693,17 @@ color: grey;
     </div>
         </div>
 
-
-
-    <script>
-        document.querySelector("#close").addEventListener("click",function(event){
-        event.preventDefault(); 
-    document.querySelector(".popup").style.display = "none";
-});
-
-document.querySelector(".cart").addEventListener("click",function(event){
-     event.preventDefault();
-    document.querySelector(".popup").style.display = "block";
-});
-    </script>
+        <script>
+            document.querySelector("#close").addEventListener("click",function(event){
+                event.preventDefault(); 
+            document.querySelector(".popup").style.display = "none";
+        });
+        
+        document.querySelector(".cart").addEventListener("click",function(event){
+             event.preventDefault();
+            document.querySelector(".popup").style.display = "block";
+        });
+        </script>
+        
 </body>
 </html>

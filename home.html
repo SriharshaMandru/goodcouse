@@ -475,6 +475,49 @@ color: grey;
         justify-content: space-between;
         padding: 0 30px;
     }
+
+    .popup {
+        width: 400px;
+        height: 200px;
+        border-radius: 20px;
+        background-color: red;
+        margin-left: 400px;
+        margin-top: 100px;
+        display: none;
+      }
+      
+      .p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      .p p {
+        font-size: 20px;
+      }
+      
+      .pop-para {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 25px;
+      }
+      
+      .popup .btn {
+        width: 30px;
+        height: 30px;
+        background-color: rgb(235, 229, 229);
+        border: none;
+        margin-left: 250px;
+      }
+      
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -494,7 +537,7 @@ color: grey;
                 <li><a href="teachers.html" target="_blank">Teachers</a></li>
                 <li><a href="courses.html" target="_blank">Courses</a></li>
                 <li><a href="contact.html" target="_blank">Contact Us</a></li>
-                <li><a href="" target="_blank">Blog</a></li>
+                <li><a href="blog.html" target="_blank">Blog</a></li>
             </ul></li>
             <li><a href="#">Template<ion-icon name="arrow-dropdown"></ion-icon></a>
             <ul class="drop-menu">
@@ -504,20 +547,35 @@ color: grey;
                <li><a href="changelog.html" target="_blank">Change log</a></li>
                <li><a href="" target="_blank">legal</a></li>
             </ul></li>
-            <li><button class="buy" target="_blank"><a href="#">Buy Template - $79</a></button></li>
-            <li><button class="cart" target="_blank"><a href="#" >Cart<span>0</span></a></button></li>
+            <li><button class="buy"><a href="buytemplate.html" target="_blank">Buy Template - $79</a></button></li>
+            <li><button class="cart"><a href="#" >Cart<span>0</span></a></button></li>
           </div>
         </div>
    </nav>
+
+   <div class="popup">
+    <div class="p">
+    <p>Your Cart</p>
+    <button id="close" class="btn">x</button>
+    </div>
+    <hr style="border:1px solid black">
+    <p class="pop-para">No items added </p>
+    </div>
+
+
+
+
+
+
         <div class="head">
             <h1>Course Webflow Template</h1>
             <p>Good Course is a premium Webflow<br> Template focussed on course creators.</p>
             <div class="btn">
                 <div class="btn1">
-                    <a href="#">Buy template</a>
+                    <a href="buytemplate.html" target="_blank">Buy template</a>
                 </div>
                 <div class="btn2">
-                    <a href="#">Explore pages</a>
+                    <a href="courses.html" target="_blank">Explore pages</a>
                 </div>
             </div>
         </div>
@@ -556,27 +614,27 @@ color: grey;
             <h1>Main pages</h1>
             <div class="DD">
                 <div class="D1">
-                    <img src="Images/home.webp">
+                    <a href="home.html" target="_blank"><img src="Images/home.webp"></a>
                     <h1>Homepage</h1>
                 </div>
                 <div class="D2">
-                    <img src="Images/about.webp">
+                    <a href="about.html" target="_blank"><img src="Images/about.webp"></a>
                     <h1>About</h1>
                 </div>
                 <div class="D3">
-                    <img src="Images/contact.webp">
+                    <a href="contact.html" target="_blank"><img src="Images/contact.webp"></a>
                     <h1>Contact</h1>
                 </div>
                 <div class="D4">
-                    <img src="Images/all cources.webp">
+                    <a href="courses.html" target="_blank"><img src="Images/all cources.webp"></a>
                     <h1>All Courses</h1>
                 </div>
                 <div class="D5">
-                    <img src="Images/course category.webp">
+                    <a href="courses.html" target="_blank"><img src="Images/course category.webp"></a>
                     <h1>Course category (Ecom)</h1>
                 </div>
                 <div class="D6">
-                    <img src="Images/course page.webp">
+                    <a href="courses.html" target="_blank"><img src="Images/course page.webp"></a>
                     <h1>Course page (Ecom)</h1>
                 </div>
             </div>
@@ -585,35 +643,35 @@ color: grey;
             <h1>Other pages</h1>
             <div class="EE">
                 <div class="E1">
-                    <img src="Images/teachers.webp">
+                    <a href="teachers.html" target="_blank"><img src="Images/teachers.webp"></a>
                     <h1>Teachers</h1>
                 </div>
                 <div class="E2">
-                    <img src="Images/teachers page.webp">
+                    <a href="teachers.html" target="_blank"><img src="Images/teachers page.webp"></a>
                     <h1>Teachers page (CMS)</h1>
                 </div>
                 <div class="E3">
-                    <img src="Images/blog.webp">
+                    <a href="blog.html" target="_blank"><img src="Images/blog.webp"></a>
                     <h1>Blog</h1>
                 </div>
                 <div class="E4">
-                    <img src="Images/blog post.webp">
+                    <a href="blog.html" target="_blank"><img src="Images/blog post.webp"></a>
                     <h1>Blog Post</h1>
                 </div>
                 <div class="E5">
-                    <img src="Images/legal.webp">
+                    <a href="legal.html" target="_blank"></a><img src="Images/legal.webp"></a>
                     <h1>Legal</h1>
                 </div>
                 <div class="E6">
-                    <img src="Images/404.webp">
+                    <a href="about.html" target="_blank"></a><img src="Images/404.webp"></a>
                     <h1>404</h1>
                 </div>
                 <div class="E7">
-                    <img src="Images/password.webp">
+                    <a href="contact.html" target="_blank"></a><img src="Images/password.webp"></div>
                     <h1>Password Protected</h1>
                 </div>
                 <div class="E8">
-                    <img src="Images/search.webp">
+                    <a href="changelog.html" target="_blank"></a><img src="Images/search.webp">
                     <h1>search Result</h1>
                 </div>
             </div>
@@ -707,7 +765,7 @@ color: grey;
     </div>
         <div class="foot3">
             <p>Good Course offers professionals tech <br> courses from the leading teachers in <br> their industries.</p>
-            <button> Buy Templates - $79</button>
+            <a href="buytemplate.html" target="_blank"><button> Buy Templates - $79</button></a>
             <hr>
         </div>
     
@@ -800,5 +858,18 @@ color: grey;
         
     </div>
     </div>
+
+<script>
+    document.querySelector("#close").addEventListener("click",function(event){
+        event.preventDefault(); 
+    document.querySelector(".popup").style.display = "none";
+});
+
+document.querySelector(".cart").addEventListener("click",function(event){
+     event.preventDefault();
+    document.querySelector(".popup").style.display = "block";
+});
+</script>
+
 </body>
 </html>

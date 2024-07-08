@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Here</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    nav {
+    background-color: rgb(208, 230, 250);
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    height:65px;
+    line-height:65px;
+}
+nav .wrapper{
+    display: flex;
+    max-width: 1250;
+    padding:0 30px;
+    margin:auto;
+    justify-content: space-between;
+}
+.wrapper .nav-links{
+    display: inline-flex;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    padding:9px 15px;
+    transition: all 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-links li a:hover {
+    font-size: 20px;
+    color:blue
+}
+.container{
+    display: flex;
+}
+.container .logo img {
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+.container .text{
+    margin-top: -30px;
+    font-size: 25px;
+    margin-left: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-links .buy{
+    background-color: rgb(204, 191, 191);
+    margin-right: 30px;
+    border: none;
+    height:40px;
+    border-radius: 10px;
+}
+.nav-links .cart{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+.nav-links .cart span{
+    padding-left: 5px;
+}
+.nav-links .drop-menu{
+    margin-right: 10px;
+    width:180px;
+    top:65px;
+    position: absolute;
+    line-height: 45px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-links li:hover .drop-menu{
+    opacity:1;
+    visibility: visible;
+}
+.drop-menu li a{
+    width:100%;
+    display: block;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+    background-color:burlywood;
+}
+.drop-menu li a:hover{
+    color:crimson;
+}
+
+.contain{
+    background-color: black;
+    color: white;
+    height: 500px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 100px;
+}
+.btn p{
+    background-color: rgb(110, 98, 26);
+    width: 250px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-left: 510px;
+    margin-top: 100px;
+}
+.btn p:hover{
+    background-color: rgb(209, 182, 28);
+}
+.B{
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    column-gap: 50px
+}
+.B1{
+    border: solid;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    padding-left: 10px;
+    position: sticky;
+    top: 80px;
+}
+.B p{
+    font-size: 20px;
+}
+.B3{
+    border: solid;
+    border-radius: 20px;
+    width: 750px;
+    padding-left: 10px;
+}    
+.B4{
+    border: solid;
+    border-radius: 20px;
+    width: 750px;
+    padding-left: 10px;
+    margin-top: 30px;
+}   
+.C{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+}
+.C1 h1{
+    height: 200px;
+    width: 200px;
+    background-color: #000000;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.C2 h1{
+    height: 200px;
+    width: 200px;
+    background-color: #fffcf2;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.C3 h1{
+    height: 200px;
+    width: 200px;
+    background-color: #fffdf8;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.C4 h1{
+    height: 200px;
+    width: 200px;
+    background-color:  #ffc46a;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.B5{
+    border: solid;
+    border-radius: 20px;
+    width: 750px;
+    padding-left: 10px;
+    margin-top: 30px;
+}   
+.B6{
+    border: solid;
+    border-radius: 20px;
+    width: 750px;
+    padding-left: 10px;
+    margin-top: 30px;
+}   
+.B7{
+    border: solid;
+    border-radius: 20px;
+    width: 750px;
+    padding-left: 10px;
+    margin-top: 30px;
+    padding: 40px 10px;
+}   
+.D{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:10px;
+    row-gap: 50px;
+}
+.D1{
+    height: 130px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgb(211, 202, 202);
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.D1 button{
+    font-size: 20px;
+    background-color: #ffc46a;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+.D2{
+    height: 130px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgb(211, 202, 202);
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.D2 button{
+    font-size: 20px;
+    background-color: #ffc46a;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+.D3{
+    height: 130px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgb(211, 202, 202);
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.D3 button{
+    font-size: 20px;
+    background-color: #f7f4f1;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+.D4{
+    height: 130px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgb(211, 202, 202);
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.D4 button{
+    font-size: 20px;
+    background-color:black;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+.footers{
+    margin-left: 30px;
+    display: flex;
+    margin-top: 50px;
+    padding-top: 100px;
+
+ 
+}
+
+.footer{
+    height: 750px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 200px;
+}
+.foot1 img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.foot2 h1{
+    margin-left: 30px;
+}
+.foot3 p{
+    margin-left: 50px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.foot3 button{
+    background-color:orangered;
+    margin-right: 30px;
+    border: none;
+    width:220px;
+    font-size: 20px;
+    height:60px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.foot3 hr{
+margin-left:30px;
+margin-top: 50px;
+width:450px;
+color: grey;
+}
+.links{
+        color: white; 
+        display: flex;
+        column-gap: 60px;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 25px;
+    }
+    .list{
+        display: flex;
+        margin-left: 500px;
+        column-gap: 40px;
+        margin-top: -360px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .list1 li{
+        list-style: none;
+        font-size: 18px;
+    }
+    .list1 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .list2 li{
+        list-style: none;
+    }
+    .list2 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .list3 li{
+        list-style: none;
+    }
+    .list3 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .list4 li{
+        list-style: none;
+    }
+    .list4 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .lines{
+        height: 2px;
+        width: 1250px;
+        background-color: wheat;
+        margin-top: 200px;
+        margin-left: 30px;
+    
+    }
+    .para{
+        margin-top: 40px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+    .popup {
+        width: 400px;
+        height: 200px;
+        border-radius: 20px;
+        background-color: red;
+        margin-left: 400px;
+        margin-top: 100px;
+        display: none;
+      }
+      
+      .p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      .p p {
+        font-size: 20px;
+      }
+      
+      .pop-para {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 25px;
+      }
+      
+      .popup .btn {
+        width: 30px;
+        height: 30px;
+        background-color: rgb(235, 229, 229);
+        border: none;
+        margin-left: 250px;
+      }
+      
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+          <div class="container">
+          <div class="logo"><img src="images/logo.jfif"></div>
+          <div class="text"><h3>Good Course</h3></div>
+          </div>
+
+        <div class="nav-links">
+          <li><a href="home.html" target="_blank">Home</a></li>
+          <li><a href="about.html" target="_blank">About</a></li>
+          <li><a href="#" target="_blank">Other<ion-icon name="arrow-dropdown"></ion-icon></a>
+          <ul class="drop-menu">
+              <li><a href="templatehome.html" target="_blank">Template Home</a></li>
+              <li><a href="teachers.html" target="_blank">Teachers</a></li>
+              <li><a href="courses.html" target="_blank">Courses</a></li>
+              <li><a href="contact.html" target="_blank">Contact Us</a></li>
+              <li><a href="" target="_blank">Blog</a></li>
+          </ul></li>
+          <li><a href="#">Template<ion-icon name="arrow-dropdown"></ion-icon></a>
+          <ul class="drop-menu">
+             <li><a href="styleguide.html" target="_blank">Style guide</a></li>  
+             <li><a href="license.html" target="_blank">Licenses</a></li>
+             <li><a href="starthere.html" target="_blank">Start here</a></li>
+             <li><a href="changelog.html" target="_blank">Change log</a></li>
+             <li><a href="legal.html" target="_blank">legal</a></li>
+          </ul></li>
+          <li><button class="buy" ><a href="buytemplate.html" target="_blank">Buy Template - $79</a></button></li>
+          <li><button class="cart"><a href="#" target="_blank">Cart<span>0</span></a></button></li>
+        </div>
+      </div>
+   </nav>
+
+   <div class="popup">
+    <div class="p">
+    <p>Your Cart</p>
+    <button id="close" class="btn">x</button>
+    </div>
+    <hr style="border:1px solid black">
+    <p class="pop-para">No items added </p>
+    </div>
+
+
+    <div class="A">  
+        
+        
+      <div class="contain">
+        <h1>Start here</h1>
+        <p>We want to offer you the best experience when <br>
+            working on your new website. Below you can find<br>
+             general information about editing Webflow sites.</p>
+            <div class="btn">
+                <a href="buytemplate.html" target="_blank"><p>Buy template $79</p></a>
+            </div>
+      </div>
+      <div class="B">
+          <div class="B1">
+            <h1>Introduction</h1>
+            <h1>Styling</h1>
+            <h1>Editing</h1>
+            <h1>Support</h1>
+          </div>
+          <div class="B2">
+            <div class="B3">
+                <h1>Introduction</h1>
+                <h3>Happy to have you here</h3>
+                <p>Whether you just bought Good Course Template, or are simply having a look, we are<br>
+                     happy to have you here. As you might know, Good Course is built on Webflow - the<br>
+                     powerful no-code tool for creating websites. If you are already familiar with it, I'm<br>
+                      sure editing this template will be a piece of cake.<br>
+                     <br>
+                    This documentation covers general rules of working with Webflow that we thought are worth sharing.</p>
+                <h3>If you are new to Webflow</h3>  
+                <p>On the other hand, if it's your first time using Webflow, you might want to have a look<br>
+                     at Webflow university and their 101 crash course.</p>  
+            </div>
+            <div class="B4">
+                <h1>Styling</h1>
+                <p>Below you can find some general rules regarding styling your template.</p>
+                <h2>Colors</h2>
+                <p>In Good Course we've used Color Swatches. It means that you can change color in <br>
+                    one place, and it will be applied to all the elements that share the same swatch.</p>
+                <h3>To change color swatches:</h3>    
+                <p>1.Click on the element with the color you want to edit.<br>
+                   2.In the styles tab on the right, find the color option (ex. Text color)<br>
+                   3. Click on the color square.<br>
+                   4. Once the little pop-up opens, click the edit icon and choose a new color.<br>
+                   5. Click save.</p>
+                <img src="images/videoframe_33502.png" width="700px">
+                <h2>Fonts</h2>
+                <p>Good Course is using only one additional font: Outfit. It can be downloaded at Font<br>
+                     Share. This font is 100% free for personal and commercial use.<br>
+                    <br>
+                    Outfit is applied to the Body of the website, and because of that, it is automatically<br>
+                     applied to all paragraphs and text blocks. You can change it globally by:<br>
+                    <br>
+                    1.Selecting "Body"<br>
+                    2.In the styles tab on the right, click selector and select "Body (All pages)"<br>
+                    3.Scroll down to "Typography" and change for the desired font.<br><br>
+                    See the video below for mini-tutorial:</p>
+                    <img src="images/videoframe_6682.png">
+                    <p>Outfit is also applied to headings (H1-H6). You can also edit them same way by:<br>
+                    <br>
+                       1. Selecting heading type you want to edit<br>
+                       2. In the styles tab on the right, click selector and select "All H(1, 2, 3, 4, 5, 6)<br> Headings"<br>
+                       3. Scroll down to "Typography" and change for the desired font.</p>
+            </div>
+            <div class="B5">
+                  <h1>Editing</h1>
+                  <p>Below you can find some general tips on editing template's copy and images.</p>
+                  <h2>Static content vs. dynamic content</h2>
+                  <p>When it comes to copy, in Webflow we distinguish two different copy types - static<br>
+                     content and dynamic content (CMS).<br><br>
+                     To quickly distinguish these copy types you can have a look in the navigator tab,<br>
+                      where static content will be displayed using white font.</p>
+                      <img src="images/section.png" style="padding-left: 140px;">
+                      <p>Static content in the navigator tab<br><br>
+                        And dynamic content will be displayed using purple font color.</p>
+                    <img src="images/section2.png" style="padding-left: 140px ;">  
+                    <p>You can also directly see which element is static and which dynamic,<br>
+                         by directly hovering over it in the designer space.<br>
+                         The static content will have a blue border around it.</p>  
+                    <img src="images/para.png" width="500px" style="padding-left: 140px;">    
+                    <p>Static content in the designer area has blue border<br><br>
+                        And dynamic content's border will be purple.</p> 
+                        <img src="images/uxui.png" style="padding-left: 30px;">
+            </div>      
+            <div class="B6">
+                <h1>Fonts</h1>
+                <p>The Good Course template uses Outfit, a closed-source font from the Indian Type<br>
+                     Foundry (ITF) that is 100% free for both personal and commercial use, available<br>
+                      exclusively via ITF's free fonts service at Fontshare. By buying or using this template, <br>
+                      you agree to ITF's Free Font License (FFL).<br>
+                    ‍<br>
+                    Links:<br>
+                    ‍Outfit: https://www.fontshare.com/fonts/outfit<br>
+                    ‍Indian Type Foundry: indiantypefoundry.com<br>
+                    ‍Fontshare: https://www.fontshare.com<br>
+                    ‍Free Font License: https://www.fontshare.com/licenses/itf-ffl</p>
+            </div>
+            <div class="B7">
+                <h1>Buttons</h1>
+             <div class="D">
+                <div class="D1">
+                    <a href="home.html" target="_blank"><button>Button Text</button></a>
+                    <p>CTA Accent</p>
+                </div>
+                <div class="D2">
+                    <a href="contact.html" target="_blank"><button>Button Text</button></a>
+                    <p>CTA Accent Big</p>
+                </div>
+                <div class="D3">
+                    <a href="license.html" target="_blank"><button>Button Text</button></a>
+                    <p>CTA Outline</p>
+                </div>
+                <div class="D4">
+                    <a href="styleguide.html" target="_blank"><button>Button Text</button></a>
+                    <p>CTA Dark</p>
+                </div>
+             </div>
+            </div>
+          </div>
+
+      </div>
+
+           <div class="footer">
+            <div class="footers">
+            <div class="foot1">
+            <img src="images/logo.jfif.jpg" alt="">
+        </div>
+               <div class="foot2">
+            <h1> Good Course</h1>
+        </div>
+    </div>
+        <div class="foot3">
+            <p>Good Course offers professionals tech <br> 
+                courses from the leading teachers in
+                 <br> their industries.</p>
+            <a href="buytemplate.html" target="_blank"><button> Buy Templates - $79</button></a>
+            <hr>
+        </div>
+    
+        
+        <div class="links">
+            <div class="link1">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="link2">
+                <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="link3">
+                <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="link4">
+                <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        
+    
+    
+        </div>
+        <div class="list">
+            <div class="list1">
+            <ul>
+                <li>Main Pages</li>
+                <br>
+                <li><a href="home.html"> Home (Sales)</a></li>
+                <br>
+                <li><a href="changelog.html"> Home page</a></li>
+                <br>
+                <li><a href="about.html"> About</a></li>
+                <br>
+                <li><a href="courses.html">Courses</a></li> <br>
+                <li><a href="teachers.html"> Teachers</a></li>
+                
+            </ul>
+        </div>
+        <div class="list2">
+            <ul>
+                <li>CMS pages</li>
+                <br>
+                <li><a href="courses.html"> Course page</a></li>
+                <br>
+                <li><a href="courses.html"> Course category</a></li>
+                <br>
+                <li><a href="blog.html"> Blog past</a></li>
+                <br>
+                <li><a href="teachers.html">Teacher profile</a></li> <br>
+                
+                
+            </ul>
+        </div>
+        <div class="list3">
+            <ul>
+                <li>Other pages</li>
+                <br>
+                <li><a href="blog.html""> Blog</a></li>
+                <br>
+                <li><a href="legal.html"> Legal</a></li>
+                <br>
+                <li><a href="contact.html"> Contact</a></li>
+                <br>
+                <li><a href="home.html">See all pages</a></li> <br>
+                
+            </ul>
+        </div>
+        <div class="list4">
+            <ul>
+                <li>Templates</li>
+                <br>
+                <li><a href="styleguide.html"> Style guide</a></li>
+                <br>
+                <li><a href="license.html"> Licences</a></li>
+                <br>
+                <li><a href="changelog.html"> Changelog</a></li>
+                <br>
+                <li><a href="starthere.html">Start here</a></li> 
+            </ul>
+        </div>
+    </div>
+    <div class="lines">
+        
+    </div>
+    <div class="para">
+        <div class="para1">
+            <p>Template designed by Wavesdesign, powered by no-code tool Webflow</p>
+        </div>
+        <div class="para2">more templates</div>
+    </div>
+        
+    </div>
+        </div>
+
+
+        <script>
+            document.querySelector("#close").addEventListener("click",function(event){
+                event.preventDefault(); 
+            document.querySelector(".popup").style.display = "none";
+        });
+        
+        document.querySelector(".cart").addEventListener("click",function(event){
+             event.preventDefault();
+            document.querySelector(".popup").style.display = "block";
+        });
+        </script>
+
+</body>
+</html>

@@ -38,11 +38,21 @@
                <li><a href="changelog.html" target="_blank">Change log</a></li>
                <li><a href="" target="_blank">legal</a></li>
             </ul></li>
-            <li><button class="buy" target="_blank"><a href="#">Buy Template - $79</a></button></li>
-            <li><button class="cart" target="_blank"><a href="#" >Cart<span>0</span></a></button></li>
+            <li><button class="buy" ><a href="buytemplate.html" target="_blank">Buy Template - $79</a></button></li>
+            <li><button class="cart"><a href="#" >Cart<span>0</span></a></button></li>
           </div>
         </div>
    </nav>
+
+
+   <div class="popup">
+    <div class="p">
+    <p>Your Cart</p>
+    <button id="close" class="btn">x</button>
+    </div>
+    <hr style="border:1px solid black">
+    <p class="pop-para">No items added </p>
+</div>
 
     <div class="container1">
         <h1>Meet teachers</h1>
@@ -195,25 +205,16 @@
     </div>
 </div>
 <div class="today">
-    <div class="today1">
-        <h1>
-            Get started today
-        </h1>
-        <p>In dui magna, posuere eget, <br> vestibulum et, tempor auctor,
-             <br> justo. Praesent congue erat.</p>
-             <button>Explore Courses</button>
-             <h5>
-                Trusted by over 10.000 students
-             </h5>
+    <div class="get">
+      <h1>Get started today</h1>
+      <p>In dui magna, posuere eget, <br>vestibulum et, tempor auctor,<br> justo. Praesent congue erat.</p>
+      <a href="courses.html" target="_blank"><button>Explore Courses</button></a>
     </div>
-    <div class="today2">
-        <div class="sunny1">
-            <img src="images/teachers5.jpg" alt="" height="350px">
-        </div>
-        <div class="sunny2">
-            <img src="images/teachers6.jpg" alt="" height="350px">
-        </div>
+    <div>
+      <img src="images/hermoiney.jpg" class="b">
+      <img src="images/hanna.jpg" class="b1">
     </div>
+  </div>
 
 
 </div>
@@ -229,7 +230,7 @@
 </div>
 <div class="foot3">
     <p>Good Course offers professionals tech <br> courses from the leading teachers in <br> their industries.</p>
-    <button> Buy Templates - $79</button>
+    <a href="buytemplate.html" target="_blank"><button> Buy Templates - $79</button></a>
     <hr>
 </div>
 
@@ -321,5 +322,21 @@
 </div>
 
 </div>
+
+
+
+
+<script>
+document.querySelector("#close").addEventListener("click",function(event){
+        event.preventDefault(); 
+    document.querySelector(".popup").style.display = "none";
+});
+
+document.querySelector(".cart").addEventListener("click",function(event){
+     event.preventDefault();
+    document.querySelector(".popup").style.display = "block";
+});
+
+</script>
 </body>
 </html>
