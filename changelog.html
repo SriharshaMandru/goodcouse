@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog</title>
+    <style>
+              nav {
+    background-color: rgb(208, 230, 250);
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    height:65px;
+    line-height:65px;
+}
+nav .wrapper{
+    display: flex;
+    max-width: 1250;
+    padding:0 30px;
+    margin:auto;
+    justify-content: space-between;
+}
+.wrapper .nav-links{
+    display: inline-flex;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    padding:9px 15px;
+    transition: all 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-links li a:hover {
+    font-size: 20px;
+    color:blue
+}
+.container{
+    display: flex;
+}
+.container .logo img {
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+.container .text{
+    margin-top: -30px;
+    font-size: 25px;
+    margin-left: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-links .buy{
+    background-color: rgb(204, 191, 191);
+    margin-right: 30px;
+    border: none;
+    height:40px;
+    border-radius: 10px;
+}
+.nav-links .cart{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+.nav-links .cart span{
+    padding-left: 5px;
+}
+.nav-links .drop-menu{
+    margin-right: 10px;
+    width:180px;
+    top:65px;
+    position: absolute;
+    line-height: 45px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-links li:hover .drop-menu{
+    opacity:1;
+    visibility: visible;
+}
+.drop-menu li a{
+    width:100%;
+    display: block;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+    background-color:burlywood;
+}
+.drop-menu li a:hover{
+    color:crimson;
+}
+.contain{
+    height: 500px;
+    width: 100%;
+}
+.bg{
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: Arial, sans-serif;
+}
+.btn {
+    width: 250px;
+    padding: 10px 10px;
+    background-color: rgb(148, 127, 8);
+    border-radius: 10px;
+    margin-left: 520px;
+    margin-top: 100px;
+}
+.btn:hover{
+    background-color: rgb(202, 177, 35) ;
+}
+.middle{
+    border: solid;
+    border-radius: 20px;
+    font-size: 30px;
+    width: 650px;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 300px;
+}
+     
+.footers{
+    margin-left: 30px;
+    display: flex;
+    margin-top: 50px;
+    padding-top: 100px;
+
+ 
+}
+
+.footer{
+    height: 750px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 200px;
+}
+.foot1 img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.foot2 h1{
+    margin-left: 30px;
+}
+.foot3 p{
+    margin-left: 50px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.foot3 button{
+    background-color:orangered;
+    margin-right: 30px;
+    border: none;
+    width:220px;
+    font-size: 20px;
+    height:60px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.foot3 hr{
+margin-left:30px;
+margin-top: 50px;
+width:450px;
+color: grey;
+}
+.links{
+        color: white; 
+        display: flex;
+        column-gap: 60px;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 25px;
+    }
+    .list{
+        display: flex;
+        margin-left: 500px;
+        column-gap: 40px;
+        margin-top: -360px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .list1 li{
+        list-style: none;
+        font-size: 18px;
+    }
+    .list1 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .list2 li{
+        list-style: none;
+    }
+    .list2 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .list3 li{
+        list-style: none;
+    }
+    .list3 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .list4 li{
+        list-style: none;
+    }
+    .list4 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .lines{
+        height: 2px;
+        width: 1250px;
+        background-color: wheat;
+        margin-top: 200px;
+        margin-left: 30px;
+    
+    }
+    .para{
+        margin-top: 40px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+          <div class="container">
+          <div class="logo"><img src="images/logo.jfif.jpg"></div>
+          <div class="text"><h3>Good Course</h3></div>
+          </div>
+
+          <div class="nav-links">
+            <li><a href="home.html" target="_blank">Home</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="#" target="_blank">Other<ion-icon name="arrow-dropdown"></ion-icon></a>
+            <ul class="drop-menu">
+                <li><a href="templatehome.html" target="_blank">Template Home</a></li>
+                <li><a href="teachers.html" target="_blank">Teachers</a></li>
+                <li><a href="courses.html" target="_blank">Courses</a></li>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li><a href="" target="_blank">Blog</a></li>
+            </ul></li>
+            <li><a href="#">Template<ion-icon name="arrow-dropdown"></ion-icon></a>
+            <ul class="drop-menu">
+               <li><a href="" target="_blank">Style guide</a></li>  
+               <li><a href="license.html" target="_blank">Licenses</a></li>
+               <li><a href="" target="_blank">Start here</a></li>
+               <li><a href="changelog.html" target="_blank">Change log</a></li>
+               <li><a href="" target="_blank">legal</a></li>
+            </ul></li>
+            <li><button class="buy" target="_blank"><a href="#">Buy Template - $79</a></button></li>
+            <li><button class="cart" target="_blank"><a href="#" >Cart<span>0</span></a></button></li>
+          </div>
+        </div>
+   </nav>
+        <div class="contain">
+           <div class="bg">
+            <h1>Changelog</h1>
+            <p>Documentation of template changes</p>
+            <div class="btn">
+            <p1>Buy template $79</p1>
+            </div>
+           </div>
+           <div class="middle">
+            <p>08.09.2023</p>
+            <h1>1.1 Template release</h1>
+            <p>Initial Bonnie Template release.</p>
+           </div>
+
+           <div class="footer">
+            <div class="footers">
+            <div class="foot1">
+            <img src="images/logo.jfif.jpg" alt="">
+        </div>
+               <div class="foot2">
+            <h1> Good Course</h1>
+        </div>
+    </div>
+        <div class="foot3">
+            <p>Good Course offers professionals tech <br> courses from the leading teachers in <br> their industries.</p>
+            <button> Buy Templates - $79</button>
+            <hr>
+        </div>
+    
+        
+        <div class="links">
+            <div class="link1">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="link2">
+                <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="link3">
+                <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="link4">
+                <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        
+    
+    
+        </div>
+        <div class="list">
+            <div class="list1">
+            <ul>
+                <li>Main Pages</li>
+                <br>
+                <li><a href="#"> Home (Sales)</a></li>
+                <br>
+                <li><a href="#"> Home page</a></li>
+                <br>
+                <li><a href="#"> About</a></li>
+                <br>
+                <li><a href="#">Courses</a></li> <br>
+                <li><a href="#"> Teachers</a></li>
+                
+            </ul>
+        </div>
+        <div class="list2">
+            <ul>
+                <li>CMS pages</li>
+                <br>
+                <li><a href="#"> Course page</a></li>
+                <br>
+                <li><a href="#"> Course category</a></li>
+                <br>
+                <li><a href="#"> Blog past</a></li>
+                <br>
+                <li><a href="#">Teacher profile</a></li> <br>
+                
+                
+            </ul>
+        </div>
+        <div class="list3">
+            <ul>
+                <li>Other pages</li>
+                <br>
+                <li><a href="#"> Blog</a></li>
+                <br>
+                <li><a href="#"> Legal</a></li>
+                <br>
+                <li><a href="#"> Contact</a></li>
+                <br>
+                <li><a href="#">See all pages</a></li> <br>
+                
+            </ul>
+        </div>
+        <div class="list4">
+            <ul>
+                <li>Templates</li>
+                <br>
+                <li><a href="#"> Style guide</a></li>
+                <br>
+                <li><a href="#"> Licences</a></li>
+                <br>
+                <li><a href="#"> Changelog</a></li>
+                <br>
+                <li><a href="#">Start here</a></li> 
+            </ul>
+        </div>
+    </div>
+    <div class="lines">  
+    </div>
+    <div class="para">
+        <div class="para1">
+            <p>Template designed by Wavesdesign, powered by no-code tool Webflow</p>
+        </div>
+        <div class="para2">more templates</div>
+    </div>   
+    </div>
+        </div>
+</body>
+</html>

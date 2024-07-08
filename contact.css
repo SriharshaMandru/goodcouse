@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
+
 nav {
     background-color: rgb(208, 230, 250);
     position: fixed;
@@ -22,6 +23,7 @@ nav .wrapper{
 .wrapper .nav-links{
     display: inline-flex;
 }
+
 .nav-links li{
     list-style: none;
 }
@@ -30,14 +32,19 @@ nav .wrapper{
     color:black;
     font-size: 18px;
     font-weight: bold;
-    padding:9px 15px;
+    padding:9px 10px;
     transition: all 0.3s ease;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .nav-links li a:hover {
     font-size: 20px;
-    color:blue
+    color:blue;
 }
+.nav-links ion-icon{
+    width:20px;
+    height:20px;
+}
+
 .container{
     display: flex;
 }
@@ -69,8 +76,7 @@ nav .wrapper{
 }
 .nav-links .drop-menu{
     margin-right: 10px;
-    border:2px solid black;
-    border-radius: 20px;
+    border:1px solid black;
     width:180px;
     top:65px;
     position: absolute;
@@ -83,20 +89,55 @@ nav .wrapper{
     opacity:1;
     visibility: visible;
 }
-.nav-links .drop-menu{
-    background-color: white;
-}
-
 .drop-menu li a{
     width:100%;
     display: block;
     padding: 0 0 0 10px;
     font-size: 16px;
-     
+    background-color: white;
 }
 .drop-menu li a:hover{
     color:crimson;
 }
+
+
+
+.slider{
+    background-color: black;
+    width:35%;
+    height:80px;
+    border-radius: 60px;
+    margin-left: 480px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+ .buttons{
+    width:140px;
+    height:50px;
+    margin-top: 15px;
+    text-align: center;
+    margin-left: 10px;
+    color:white;
+    border-radius: 30px;
+} 
+.buttons h4{
+    margin-top: 12px;
+}
+.buttons:hover{
+    background-color: rgb(83, 83, 83);
+    filter:blur(0.3px);
+}
+
+
+.buttons.active {
+    background-color: white;
+    color: black;
+}
+
+
+
+
 
 .talk{
     margin-top: 150px;
@@ -120,7 +161,7 @@ nav .wrapper{
     margin-left: 200px;
     margin-top: -50px;
 }
-ion-icon{
+.box ion-icon{
     width: 80px;
     height:80px;
     margin-left: 40px;
@@ -138,6 +179,8 @@ ion-icon{
 }
 .contact input{
     padding:20px;
+    width:600px;
+    height:80px;
     margin-top: 30px;
     margin:20px;
     font-size: 20px;
@@ -159,10 +202,27 @@ ion-icon{
     height:50px;
     margin-left: 20px;
     border-radius: 5px;
+    font-size: 18px;
     border:none;
     background-color: orange;
 }
-
+.thank-you {
+        width:50%;
+        height:100px;
+        border: 2px solid black;
+        float:right;
+        margin-top: -450px;
+        margin-left: 630px;
+        border-radius: 20px;
+        position: relative;
+        display: none;
+        
+}
+.thank-you .e{
+    margin-top: 20px;
+    margin-left: 20px;
+    color:green;
+}
 .footers{
     margin-left: 30px;
     display: flex;
@@ -276,3 +336,94 @@ color: grey;
         padding: 0 30px;
     }
 
+
+
+
+
+
+    .heading2{
+        margin-left: 500px;
+        margin-top: 300px;
+    }
+    
+    
+    .heading2 p{
+        margin-top: 20px;
+        margin-left: 35px;
+        font-size: 20px;
+    }
+    .accordion{
+        margin: 70px auto;
+        width: 600px;
+        margin-left: 380px;
+        border:2px solid black;
+        padding:0px 30px;
+        padding-left: 2px;
+        border-radius:10px;
+     }
+    
+     .accordion li{
+    
+        list-style: none;
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        background: #e3edf7;
+        box-shadow: 6px 6px 10px -1px rgba(0,0, 0, 0.15),
+                    -6px -6px 10px -10px rgba(255, 255, 255, 0.7);
+     }
+    
+     .accordion li label{
+        display: flex;
+         align-items: center;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer; 
+     }
+    
+     label::before{
+        margin-right: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        content: '+'; 
+     }
+    
+     input[type="radio"]{
+    
+        display: none;
+     }
+    
+     .accordion .content{
+    
+        color: #555;
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s, padding 0.5s;
+     }
+    
+     .accordion input[type="radio"]:checked + label + .content{
+    
+            max-height: 400px;
+            padding: 10px 10px 20px;
+     }
+    
+     .accordion input[type="radio"]:checked + label::before{
+    
+        content: '-';
+     } 
+
+
+
+     .last-btn{
+        width:200px;
+        height:50px;
+        margin-left: 560px;
+        border:none;
+        background-color: orange;
+        font-size: 18px;
+        border-radius: 20px;
+     }

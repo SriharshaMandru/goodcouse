@@ -271,51 +271,32 @@ video{
     height:400px;
     margin-top: 50px;
 }
-.pipe{
-    display: flex;
-    flex-direction: column;
-}
-.pagination{
-    background-color:orange;
-    width:20px;
-    height: 300px;
-    margin-top: 20px;
-    margin-left: 150px;
-    margin-right: 300px;
-} 
-.abc{
-    background-color: black;
-    height:350vh;
-}
 
+.abc{
+    text-align: center;
+    padding:20px;
+}
 .abc span{
     font-size: 50px;
     color:white;
-    margin-left:400px;
+    margin-left:180px;
 }
 .abc h3{
      color:white;
-     margin-left: 450px;   
+     margin-left: 200px;   
 }
 .abc p{
     color:white;
     margin-top: 30px;
 }
-.sub-abc {
-    width:500px;
-    height:300px;
-    margin-left: 40%;
-    margin-top:30px;
+
+
+.a{
+    background-color: black;
+    color:white;
+    padding:100px;
 }
-.sub-abc span{
-    font-size:30px;
-    text-align: center;
-    margin-left: 0;
-}
-.sub-abc p{
-    font-size: 18px;
-}
-.abc button{
+ .a button{
     margin-left: 600px;
     width:180px;
     height:60px;
@@ -324,7 +305,101 @@ video{
     background-color: orange;
     border-radius: 20px;
     margin-top: 30px;
-} 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}  
+.a button:hover{
+    transform: scale(1.1);
+}
+.sub-abc {
+    width:700px;
+    height:300px;
+    margin-left: 12%;
+    margin-top:30px;
+}
+.sub-abc span{
+    font-size:30px;
+    text-align: center;
+    margin-left: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sub-abc p{
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+.main{
+    display: flex;
+    margin-left:200px;
+}
+.page{
+    width:15px;
+    height:1900px;
+    background-color: orange;
+    margin-top: 60px;
+}
+.round{
+   background-color: orange;
+   border-radius: 50%;
+   width:30px;
+   height:30px;
+   margin-top: 35px;
+   margin-left: -22px;
+}
+.round2{
+    background-color: orange;
+   border-radius: 50%;
+   width:30px;
+   height:30px;
+   margin-top: 360px;
+   margin-left: -30px;
+}
+.round3{
+    background-color: orange;
+   border-radius: 50%;
+   width:30px;
+   height:30px;
+   margin-top: 690px;
+   margin-left: -30px;
+}
+.round4{
+    background-color:orange;
+   border-radius: 50%;
+   width:30px;
+   height:30px;
+   margin-top: 1020px;
+   margin-left: -30px;
+}
+.round5{
+    background-color:orange;
+   border-radius: 50%;
+   width:30px;
+   height:30px;
+   margin-top: 1360px;
+   margin-left: -30px;
+}
+.round6{
+    background-color: orange;
+   border-radius: 50%;
+   width:30px;
+   height:30px;
+   margin-top: 1690px;
+   margin-left: -30px;
+}
+.round7{
+    background-color:orange;
+   border-radius: 50%;
+   width:30px;
+   height:30px;
+   margin-top: 1950px;
+   margin-left: -30px;
+}
+
+
+
+
 
 
 
@@ -396,6 +471,11 @@ video{
     font-size: 18px;
     margin-top:30px;
     margin-left: 70px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.get button:hover{
+    transform:scale(1.1);
 }
 .today div{
     margin-left: 130px;
@@ -443,7 +523,7 @@ video{
     font-size: 20px;
 }
 .foot3 button{
-    background-color:orangered;
+    background-color:orange;
     margin-right: 30px;
     border: none;
     width:220px;
@@ -452,6 +532,11 @@ video{
     border-radius: 5px;
     margin-top: 30px;
     margin-left: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.foot3 button:hover{
+    transform: scale(1.1);
 }
 .foot3 hr{
 margin-left:30px;
@@ -522,3 +607,176 @@ color: grey;
         justify-content: space-between;
         padding: 0 30px;
     }
+
+
+
+
+
+    .heading2{
+        margin-left: 500px;
+        margin-top: 350px;
+    
+    }
+    
+    
+    .heading2 p{
+        margin-top: 20px;
+        margin-left: 35px;
+        font-size: 20px;
+    }
+    .accordion{
+        margin: 70px auto;
+        width: 600px;
+        margin-left: 380px;
+        border:2px solid black;
+        padding:0px 30px;
+        padding-left: 2px;
+        border-radius:10px;
+     }
+    
+     .accordion li{
+    
+        list-style: none;
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        background: #e3edf7;
+        box-shadow: 6px 6px 10px -1px rgba(0,0, 0, 0.15),
+                    -6px -6px 10px -10px rgba(255, 255, 255, 0.7);
+     }
+    
+     .accordion li label{
+        display: flex;
+         align-items: center;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer; 
+     }
+    
+     label::before{
+        margin-right: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        content: '+'; 
+     }
+    
+     input[type="radio"]{
+    
+        display: none;
+     }
+    
+     .accordion .content{
+    
+        color: #555;
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s, padding 0.5s;
+     }
+    
+     .accordion input[type="radio"]:checked + label + .content{
+    
+            max-height: 400px;
+            padding: 10px 10px 20px;
+     }
+    
+     .accordion input[type="radio"]:checked + label::before{
+    
+        content: '-';
+     } 
+
+
+
+     .last-btn{
+        width:200px;
+        height:50px;
+        margin-left: 560px;
+        border:none;
+        background-color: orange;
+        font-size: 18px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+     }
+
+     .last-btn:hover {
+        transform: scale(1.1);
+     }
+
+
+
+
+     .slider{
+        background-color: black;
+        width:35%;
+        height:80px;
+        border-radius: 60px;
+        margin-left: 480px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+     .buttons{
+        width:140px;
+        height:50px;
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 10px;
+        color:white;
+        border-radius: 30px;
+    } 
+    .buttons h4{
+        margin-top: 12px;
+    }
+    .buttons:hover{
+        background-color: rgb(83, 83, 83);
+        filter:blur(0.3px);
+    }
+    
+    
+    .buttons.active {
+        background-color: white;
+        color: black;
+    }
+    
+
+
+
+
+      .popup {
+        width: 400px;
+        height: 200px;
+        border-radius: 20px;
+        background-color: red;
+        margin-left: 400px;
+        margin-top: 100px;
+        display: none;
+      }
+      
+      .p {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 10px;
+      }
+      
+      .p p {
+        font-size: 20px;
+      }
+      
+      .pop-para {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 25px;
+      }
+      
+      .popup .btn {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border: none;
+      }
+      

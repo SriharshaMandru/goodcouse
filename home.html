@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+     
+    nav {
+    background-color: rgb(208, 230, 250);
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    height:65px;
+    line-height:65px;
+}
+nav .wrapper{
+    display: flex;
+    max-width: 1250;
+    padding:0 30px;
+    margin:auto;
+    justify-content: space-between;
+}
+.wrapper .nav-links{
+    display: inline-flex;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    padding:9px 15px;
+    transition: all 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-links li a:hover {
+    font-size: 20px;
+    color:blue
+}
+.container{
+    display: flex;
+}
+.container .logo img {
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+.container .text{
+    margin-top: -30px;
+    font-size: 25px;
+    margin-left: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-links .buy{
+    background-color: rgb(204, 191, 191);
+    margin-right: 30px;
+    border: none;
+    height:40px;
+    border-radius: 10px;
+}
+.nav-links .cart{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+.nav-links .cart span{
+    padding-left: 5px;
+}
+.nav-links .drop-menu{
+    margin-right: 10px;
+    width:180px;
+    top:65px;
+    position: absolute;
+    line-height: 45px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-links li:hover .drop-menu{
+    opacity:1;
+    visibility: visible;
+}
+.drop-menu li a{
+    width:100%;
+    display: block;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+    background-color:white;
+}
+.drop-menu li a:hover{
+    color:crimson;
+}
+        .head{
+            margin: 100px;
+            font-size: 30px;
+            text-align: center;
+            font-family:  Arial, sans-serif;
+        }
+        .head a{
+            text-decoration: none;
+            color: black;
+        }
+        .btn{
+            display: flex;
+            column-gap:70px;
+            margin-left: 450px;
+            font-size: 20px;
+            font-family:  Arial, sans-serif;
+        }
+        .btn1{
+            background-color: rgb(207, 160, 71);
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .btn2{
+            background-color: rgb(207, 160, 71);
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .btn1:hover{
+            background-color:blueviolet;
+        }
+        .btn2:hover{
+            background-color:blueviolet;
+        }
+        .A{
+            font-family:  Arial, sans-serif; 
+            text-align: center;
+            margin-top: 100px;
+        }
+        .B {
+            display: flex;
+            column-gap: 10px;
+            padding-left: 10px;
+        }
+        .B1{
+            width: 350px;
+            border: solid;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .B2{
+            width: 350px;
+            border: solid;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .B3{
+            width: 300px;
+            border: solid;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .C{
+            display: flex;
+            column-gap:30px;
+            font-size: 20px;
+            font-family:  Arial, sans-serif; 
+            margin-top: 100px;
+            border: solid;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .D{
+            margin-top: 100px;
+        }
+        .DD{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap:20px;
+            row-gap: 50px;
+            margin-left: 20px;
+        }
+        .DD img {
+            height: 300px;
+            width: 300px;
+        }
+        .D1{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        } 
+        .D2{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        } 
+        .D3{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        } 
+        .D4{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        } 
+        .D5{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        } 
+        .D6{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        } 
+        .EE{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 50px;
+            margin-left: 20px;
+            margin-top: 100px;
+        }
+        .EE img{
+            height: 300px;
+            width: 300px;
+        }
+        .E1{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .E2{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .E3{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .E4{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .E5{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .E6{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .E7{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .E8{
+            border: solid;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .F1 p{
+            border: solid;
+            width: 200px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+            margin-left: 20px;
+        }
+        .F1{
+            display: flex;
+            column-gap: 80px;
+        }
+        .H{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 100px;
+        }
+        .G{
+            font-size: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap:20px;
+            row-gap: 50px;
+            margin-left: 70px;
+        }
+        .G p{
+            font-size: 20px;
+        }
+        .G1{
+            border: solid;
+            border-radius: 20px;
+            width: 350px;
+            padding-left: 20px;
+        }
+        .G2{
+            border: solid;
+            border-radius: 20px;
+            width: 350px;
+            padding-left: 20px;
+        }
+        .G3{
+            border: solid;
+            border-radius: 20px;
+            width: 350px;
+            padding-left: 20px;
+        }
+        .G4{
+            border: solid;
+            border-radius: 20px;
+            width: 350px;
+            padding-left: 20px;
+        }
+        .G5{
+            border: solid;
+            border-radius: 20px;
+            width: 350px;
+            padding-left: 20px;
+        }
+        .G6{
+            border: solid;
+            border-radius: 20px;
+            width: 350px;
+            padding-left: 20px;
+        }
+        .G7{
+            border: solid;
+            border-radius: 20px;
+            width: 350px;
+            padding-left: 20px;
+        }
+        .G8{
+            border: solid;
+            border-radius: 20px;
+            width: 350px;
+            padding-left: 20px;
+        }
+        .G9{
+            border: solid;
+            border-radius: 20px;
+            width: 350px;
+            padding-left: 20px;
+        }
+        .footers{
+    margin-left: 30px;
+    display: flex;
+    margin-top: 50px;
+    padding-top: 100px;
+
+ 
+}
+
+.footer{
+    height: 750px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+
+}
+.foot1 img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.foot2 h1{
+    margin-left: 30px;
+}
+.foot3 p{
+    margin-left: 50px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.foot3 button{
+    background-color:orangered;
+    margin-right: 30px;
+    border: none;
+    width:220px;
+    font-size: 20px;
+    height:60px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.foot3 hr{
+margin-left:30px;
+margin-top: 50px;
+width:450px;
+color: grey;
+}
+.links{
+        color: white; 
+        display: flex;
+        column-gap: 60px;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 25px;
+    }
+    .list{
+        display: flex;
+        margin-left: 500px;
+        column-gap: 40px;
+        margin-top: -360px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .list1 li{
+        list-style: none;
+        font-size: 18px;
+    }
+    .list1 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .list2 li{
+        list-style: none;
+    }
+    .list2 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .list3 li{
+        list-style: none;
+    }
+    .list3 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .list4 li{
+        list-style: none;
+    }
+    .list4 ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .lines{
+        height: 2px;
+        width: 1250px;
+        background-color: wheat;
+        margin-top: 200px;
+        margin-left: 30px;
+    
+    }
+    .para{
+        margin-top: 40px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+          <div class="container">
+          <div class="logo"><img src="images/logo.jfif.jpg"></div>
+          <div class="text"><h3>Good Course</h3></div>
+          </div>
+
+          <div class="nav-links">
+            <li><a href="home.html" target="_blank">Home</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="#" target="_blank">Other<ion-icon name="arrow-dropdown"></ion-icon></a>
+            <ul class="drop-menu">
+                <li><a href="templatehome.html" target="_blank">Template Home</a></li>
+                <li><a href="teachers.html" target="_blank">Teachers</a></li>
+                <li><a href="courses.html" target="_blank">Courses</a></li>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li><a href="" target="_blank">Blog</a></li>
+            </ul></li>
+            <li><a href="#">Template<ion-icon name="arrow-dropdown"></ion-icon></a>
+            <ul class="drop-menu">
+               <li><a href="" target="_blank">Style guide</a></li>  
+               <li><a href="license.html" target="_blank">Licenses</a></li>
+               <li><a href="" target="_blank">Start here</a></li>
+               <li><a href="changelog.html" target="_blank">Change log</a></li>
+               <li><a href="" target="_blank">legal</a></li>
+            </ul></li>
+            <li><button class="buy" target="_blank"><a href="#">Buy Template - $79</a></button></li>
+            <li><button class="cart" target="_blank"><a href="#" >Cart<span>0</span></a></button></li>
+          </div>
+        </div>
+   </nav>
+        <div class="head">
+            <h1>Course Webflow Template</h1>
+            <p>Good Course is a premium Webflow<br> Template focussed on course creators.</p>
+            <div class="btn">
+                <div class="btn1">
+                    <a href="#">Buy template</a>
+                </div>
+                <div class="btn2">
+                    <a href="#">Explore pages</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+       <div class="slider1"></div>
+       <div class="slider2"></div>
+       <div class="slider1"></div>
+        </div>
+        <div class="A">
+            <h1>Included in Good Course Template</h1>
+            <p>Good Course Webflow Template comes with everything you need to get your website off the ground</p>
+        </div>
+        <div class="B">
+            <div class="B1">
+                <h1>17+ pages</h1>
+                <img src="Images/17 pages.svg">
+            </div>
+            <div class="B2">
+                <h1>25+ sections</h1>
+                <img src="Images/25 pages.svg">
+            </div>
+            <div class="B2">
+                <h1>20+ Styles & Symbols</h1>
+                <img src="Images/20 pages.svg">
+            </div>
+        </div>
+        <div class="C">
+            <img src="Images/figma file.svg">
+            <div class="C1">
+                <h1>Figma file included</h1>
+                <p>To give you 100% control over the design, together with Webflow project, you also get the Figma file. After the<br>
+                     purchase, simply send us an email to templates@wavesdesign.io and we will be happy to forward you the Figma file.</p>
+            </div>
+        </div>
+        <div class="D">
+            <h1>Main pages</h1>
+            <div class="DD">
+                <div class="D1">
+                    <img src="Images/home.webp">
+                    <h1>Homepage</h1>
+                </div>
+                <div class="D2">
+                    <img src="Images/about.webp">
+                    <h1>About</h1>
+                </div>
+                <div class="D3">
+                    <img src="Images/contact.webp">
+                    <h1>Contact</h1>
+                </div>
+                <div class="D4">
+                    <img src="Images/all cources.webp">
+                    <h1>All Courses</h1>
+                </div>
+                <div class="D5">
+                    <img src="Images/course category.webp">
+                    <h1>Course category (Ecom)</h1>
+                </div>
+                <div class="D6">
+                    <img src="Images/course page.webp">
+                    <h1>Course page (Ecom)</h1>
+                </div>
+            </div>
+        </div>
+        <div class="E">
+            <h1>Other pages</h1>
+            <div class="EE">
+                <div class="E1">
+                    <img src="Images/teachers.webp">
+                    <h1>Teachers</h1>
+                </div>
+                <div class="E2">
+                    <img src="Images/teachers page.webp">
+                    <h1>Teachers page (CMS)</h1>
+                </div>
+                <div class="E3">
+                    <img src="Images/blog.webp">
+                    <h1>Blog</h1>
+                </div>
+                <div class="E4">
+                    <img src="Images/blog post.webp">
+                    <h1>Blog Post</h1>
+                </div>
+                <div class="E5">
+                    <img src="Images/legal.webp">
+                    <h1>Legal</h1>
+                </div>
+                <div class="E6">
+                    <img src="Images/404.webp">
+                    <h1>404</h1>
+                </div>
+                <div class="E7">
+                    <img src="Images/password.webp">
+                    <h1>Password Protected</h1>
+                </div>
+                <div class="E8">
+                    <img src="Images/search.webp">
+                    <h1>search Result</h1>
+                </div>
+            </div>
+        </div>
+        <div class="F">
+            <h1>Template pages</h1>
+            <div class="F1">
+                <p>Style guide</p>
+                <p>Licenses</p>
+                <p>Start here</p>
+                <p>Changelog</p>
+            </div>
+        </div>
+        <div class="H">
+            <h1>Good Course comes with even more power</h1>
+            <p>Overview of all the features included in Good Course template</p>
+        </div>
+        <div class="G">
+            <div class="G1">
+                <h1>Premium, custom, simply<br> great</h1>
+                <p>Yes, we know... it's easy to say it, but <br>that's the fact. 
+                    We did put a lot of <br>thought into the template. 
+                    Good Course<br> was designed by an award-winning designer.<br> Layouts you will find in our template are <br>
+                    custom made to fit the industry after<br> carefully made research.</p>
+            </div>
+            <div class="G2">
+                <h1>Optimised for speed</h1>
+                <p>Yes, we know... it's easy to say it, but <br>that's the fact. 
+                    We did put a lot of <br>thought into the template. 
+                    Good Course<br> was designed by an award-winning designer.<br> Layouts you will find in our template are <br>
+                    custom made to fit the industry after<br> carefully made research.</p>
+            </div>
+            <div class="G3">
+                <h1>Responsive</h1>
+                <p>Yes, we know... it's easy to say it, but <br>that's the fact. 
+                    We did put a lot of <br>thought into the template. 
+                    Good Course<br> was designed by an award-winning designer.<br> Layouts you will find in our template are <br>
+                    custom made to fit the industry after<br> carefully made research.</p>
+            </div>
+            <div class="G4">
+                <h1>Reusable animations</h1>
+                <p>Yes, we know... it's easy to say it, but <br>that's the fact. 
+                    We did put a lot of <br>thought into the template. 
+                    Good Course<br> was designed by an award-winning designer.<br> Layouts you will find in our template are <br>
+                    custom made to fit the industry after<br> carefully made research.</p>
+            </div>
+            <div class="G5">
+                <h1>Modular</h1>
+                <p>Yes, we know... it's easy to say it, but <br>that's the fact. 
+                    We did put a lot of <br>thought into the template. 
+                    Good Course<br> was designed by an award-winning designer.<br> Layouts you will find in our template are <br>
+                    custom made to fit the industry after<br> carefully made research.</p>
+            </div>
+            <div class="G6">
+                <h1>100% customisable</h1>
+                <p>Yes, we know... it's easy to say it, but <br>that's the fact. 
+                    We did put a lot of <br>thought into the template. 
+                    Good Course<br> was designed by an award-winning designer.<br> Layouts you will find in our template are <br>
+                    custom made to fit the industry after<br> carefully made research.</p>
+            </div>
+            <div class="G7">
+                <h1>CMS</h1>
+                <p>Yes, we know... it's easy to say it, but <br>that's the fact. 
+                    We did put a lot of <br>thought into the template. 
+                    Good Course<br> was designed by an award-winning designer.<br> Layouts you will find in our template are <br>
+                    custom made to fit the industry after<br> carefully made research.</p>
+            </div>
+            <div class="G8">
+                <h1>Ecommerce</h1>
+                <p>Yes, we know... it's easy to say it, but <br>that's the fact. 
+                    We did put a lot of <br>thought into the template. 
+                    Good Course<br> was designed by an award-winning designer.<br> Layouts you will find in our template are <br>
+                    custom made to fit the industry after<br> carefully made research.</p>
+            </div>
+            <div class="G9">
+                <h1>Figma included</h1>
+                <p>Yes, we know... it's easy to say it, but <br>that's the fact. 
+                    We did put a lot of <br>thought into the template. 
+                    Good Course<br> was designed by an award-winning designer.<br> Layouts you will find in our template are <br>
+                    custom made to fit the industry after<br> carefully made research.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footers">
+            <div class="foot1">
+            <img src="images/logo.jfif.jpg" alt="">
+        </div>
+               <div class="foot2">
+            <h1> Good Course</h1>
+        </div>
+    </div>
+        <div class="foot3">
+            <p>Good Course offers professionals tech <br> courses from the leading teachers in <br> their industries.</p>
+            <button> Buy Templates - $79</button>
+            <hr>
+        </div>
+    
+        
+        <div class="links">
+            <div class="link1">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="link2">
+                <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="link3">
+                <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="link4">
+                <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        
+    
+    
+        </div>
+        <div class="list">
+            <div class="list1">
+            <ul>
+                <li>Main Pages</li>
+                <br>
+                <li><a href="#"> Home (Sales)</a></li>
+                <br>
+                <li><a href="#"> Home page</a></li>
+                <br>
+                <li><a href="#"> About</a></li>
+                <br>
+                <li><a href="#">Courses</a></li> <br>
+                <li><a href="#"> Teachers</a></li>
+                
+            </ul>
+        </div>
+        <div class="list2">
+            <ul>
+                <li>CMS pages</li>
+                <br>
+                <li><a href="#"> Course page</a></li>
+                <br>
+                <li><a href="#"> Course category</a></li>
+                <br>
+                <li><a href="#"> Blog past</a></li>
+                <br>
+                <li><a href="#">Teacher profile</a></li> <br>
+                
+                
+            </ul>
+        </div>
+        <div class="list3">
+            <ul>
+                <li>Other pages</li>
+                <br>
+                <li><a href="#"> Blog</a></li>
+                <br>
+                <li><a href="#"> Legal</a></li>
+                <br>
+                <li><a href="#"> Contact</a></li>
+                <br>
+                <li><a href="#">See all pages</a></li> <br>
+                
+            </ul>
+        </div>
+        <div class="list4">
+            <ul>
+                <li>Templates</li>
+                <br>
+                <li><a href="#"> Style guide</a></li>
+                <br>
+                <li><a href="#"> Licences</a></li>
+                <br>
+                <li><a href="#"> Changelog</a></li>
+                <br>
+                <li><a href="#">Start here</a></li> 
+            </ul>
+        </div>
+    </div>
+    <div class="lines">
+        
+    </div>
+    <div class="para">
+        <div class="para1">
+            <p>Template designed by Wavesdesign, powered by no-code tool Webflow</p>
+        </div>
+        <div class="para2">more templates</div>
+    </div>
+        
+    </div>
+    </div>
+</body>
+</html>
